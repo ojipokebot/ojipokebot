@@ -1,6 +1,6 @@
 # 必要なライブラリをインポートします
 import discord
-
+import os
 # --- 設定項目 ---
 # 自分のボットのトークンに置き換えてください
 BOT_TOKEN = os.getenv("DISCORD_BOT_TOKEN")
@@ -84,4 +84,5 @@ else:
     except discord.errors.LoginFailure:
         print("エラー: 不正なトークンです。トークンが正しいか確認してください。")
     except Exception as e:
+
         print(f"予期せぬエラーが発生しました: {e}")
